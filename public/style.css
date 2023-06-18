@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#form{
+    width: 50%;
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+ul{
+    height: 50vh;
+    background-color: rgb(128, 128, 128,.5);
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    width: 90%;
+    border: solid 3px #808070;
+    
+
+}
+
+
+input,button{
+    width: 50%;
+    height: 40px;border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+
+
+@media(max-width:900px){
+    #form{
+        width: 100vw;
+        height: 100vh;
+    }
+    #msg{
+        width: 90%;
+    }
+}

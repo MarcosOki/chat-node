@@ -14,7 +14,9 @@ app.use(express.static(__dirname+"/public"))
 app.set("views", __dirname + "/public")
 app.engine("html",require("ejs").renderFile)
 
-const port = 9000
+const PORTA = process.env.PORT || 5000;
+
+
 servidor.listen(port, ()=>{
     console.log("Conectado na porta" + port);
 })

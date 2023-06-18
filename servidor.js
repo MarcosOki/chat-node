@@ -17,7 +17,7 @@ app.engine("html",require("ejs").renderFile)
 const PORTA = process.env.PORT || 5000;
 
 
-servidor.listen(port, ()=>{
+servidor.listen(PORTA, ()=>{
     console.log("Conectado na porta" + port);
 })
 

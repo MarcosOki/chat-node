@@ -18,7 +18,7 @@ const PORTA = process.env.PORT || 5000;
 
 
 servidor.listen(PORTA, ()=>{
-    console.log("Conectado na porta" + port);
+    console.log("Conectado na porta" + PORTA);
 })
 
 app.get("/",(req,res)=>{
